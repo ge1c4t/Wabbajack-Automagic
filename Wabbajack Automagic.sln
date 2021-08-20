@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wabbajack Automagic", "Wabbajack Automagic\Wabbajack Automagic.csproj", "{5A8CC7AB-CB72-4C45-927B-65B1B9D07164}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A8CC7AB-CB72-4C45-927B-65B1B9D07164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A8CC7AB-CB72-4C45-927B-65B1B9D07164}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A8CC7AB-CB72-4C45-927B-65B1B9D07164}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A8CC7AB-CB72-4C45-927B-65B1B9D07164}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DE9BDB28-586E-49B9-B92B-1BF936BA6B33}
+	EndGlobalSection
+EndGlobal
