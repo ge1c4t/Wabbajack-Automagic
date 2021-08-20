@@ -4,26 +4,14 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Forms;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.Windows.Threading;
 using MessageBox = System.Windows.Forms.MessageBox;
 
 namespace Wabbajack_Automagic
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         [System.Runtime.InteropServices.DllImport("user32.dll")]
@@ -55,8 +43,15 @@ namespace Wabbajack_Automagic
 
         private void ButtonStart_Click(object sender, RoutedEventArgs e)
         {
-            if (delayInput.Text == "") System.Windows.Forms.MessageBox.Show("Enter delay", "Error");
-            else updateDelay(Int32.Parse(delayInput.Text));
+            if (delayInput.Text == "")
+            {
+                System.Windows.Forms.MessageBox.Show("Enter delay", "Error");
+            }
+            else
+            {
+                updateDelay(Int32.Parse(delayInput.Text));
+            }
+
             magicTimer.Start();
             statusLabel.Content = "ACTIVE";
             statusLabel.Foreground = System.Windows.Media.Brushes.Green;
@@ -72,7 +67,7 @@ namespace Wabbajack_Automagic
         }
 
         private void magicTimer_Tick(object sender, EventArgs e)
-        { 
+        {
             outputToConsole("Checking for button");
             SetCursorPos(0, 0);
             currentScreen = Screenshot();
@@ -83,7 +78,10 @@ namespace Wabbajack_Automagic
                 clickMouse(currentPoint.Value.X + (slowButton.Width / 2), currentPoint.Value.Y + (slowButton.Height / 2));
                 wait(5000);
             }
-            else outputToConsole("Couldn't find button");
+            else
+            {
+                outputToConsole("Couldn't find button");
+            }
         }
 
         private void clearConsole()
@@ -220,7 +218,10 @@ namespace Wabbajack_Automagic
         public void wait(int milliseconds)
         {
             var timer1 = new System.Windows.Forms.Timer();
-            if (milliseconds == 0 || milliseconds < 0) return;
+            if (milliseconds == 0 || milliseconds < 0)
+            {
+                return;
+            }
 
             // Console.WriteLine("start wait timer");
             timer1.Interval = milliseconds;
