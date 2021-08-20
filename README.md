@@ -2,7 +2,7 @@
 An autoclicker for Wabbajack modlist installer.
 
 ## Instructions
-1.) Extract zip
+1.) Extract zip  
 2.) Open Wabbajack and start modlist installation
 3.) Open `Wabbajack Automagic.exe`
 
