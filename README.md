@@ -1,6 +1,8 @@
 # Wabbajack-Automagic
 An autoclicker for Wabbajack modlist installer.  
 
+## NOTE: This program is against NexusMod's TOS. Use with caution.
+
 ## Instructions
 1.) Extract zip  
 2.) Open Wabbajack and start modlist installation  
