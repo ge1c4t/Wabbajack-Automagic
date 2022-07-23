@@ -103,11 +103,11 @@ namespace Wabbajack_Automagic
         }
         public Bitmap Screenshot()
         {
-            var screenShot = new Bitmap(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height);
+            var screenShot = new Bitmap(SystemInformation.VirtualScreen.Width, SystemInformation.VirtualScreen.Height);
 
             using (var g = Graphics.FromImage(screenShot))
             {
-                g.CopyFromScreen(0, 0, 0, 0, Screen.PrimaryScreen.Bounds.Size);
+                g.CopyFromScreen(0, 0, 0, 0, screenShot.Size);
             }
 
             return screenShot;
